@@ -33,7 +33,7 @@ document.querySelector(".btn-hold").addEventListener("click", function() {
   if(gameState){
     globalScore[activePerson] += roundScore; //OR we could PUSH into array, too you know;
     document.querySelector("#score-" + activePerson).textContent = globalScore[activePerson];
-    if (globalScore[activePerson] >= 10) {
+    if (globalScore[activePerson] >= 100) {
       document.querySelector("#name-" + activePerson).textContent = "WINNER!";
       document.querySelector(".dice").style.display = "none";
       document.querySelector(".player-" + activePerson + "-panel").classList.add("winner");
